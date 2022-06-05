@@ -1,3 +1,4 @@
-* {
-    background: linear-gradient(#0808a9,#6b016b)
-}
+html {
+    background: linear-gradient(#0808a9,#6b016b);
+    height: 100%;
+    }
