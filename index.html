@@ -4,14 +4,115 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>CV</title>
+    <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
 </head>
-<body>
-    <div>1</div>
-    <div>2</div>
-    <div>3</div>
-    <div>4</div>
-    <div>5</div>
-</body>
+    <body>
+        <main class="container">
+            <div class="left-column">
+
+            <header class="avatar"></header>
+
+            <section class="profile">
+                <h2 class="uppercase">profile</h2>
+                <h3>Name</h3>
+                <p>Aleksandr Mikheev</p>
+                <h3>Adresess</h3>
+                <p>Nizhny Novgorod, Russia</p>
+                <h3>Date of birth</h3>
+                <p>20<sup>th</sup> August 1993</p>
+            </section>
+
+            <section class="personality">
+                <h2 class="uppercase">Personality</h2>
+                <p>Creative</p>
+                <p><progress value="7" max="10"></progress></p>
+                <p>learnability</p>
+                <p><progress value="9" max="10"></progress></p>
+                <p>Teamwork</p>
+                <p><progress value="8" max="10"></progress></p>
+                <p>Stress resistance</p>
+                <p><progress value="8" max="10">Stress resistance</progress></p>
+            </section>
+
+            <section class="contact">
+                <h2 class="uppercase">contacts</h2>
+                <p><img class="small-icons" src="icons/iphone.png" alt="Phone icon"><a href="tel:+79200652035"> +7 (920) 065-20-35</a></p>
+                <p><img class="small-icons" src="icons/email.png" alt="Mail icon"><a href="mailto:amikheev1993@gmail.com"> amikheev1993@gmail.com</a></p>
+            </section>
+            </div>
+
+            <div class="right-column">
+                <header class="name">
+                    <h1>Mikheev <span class="bold">Aleksandr</span></h1>
+                    <p><span class="bold">Frontend</span> developer</p>
+                </header>
+
+                <section class="about-me">
+                    <h2>About me</h2>
+                    <p>A few words about me ... I live in Russia in the city of Nizhny Novgorod. I work as a sales representative in a local company that is a partner of Siemens DI SW and implements software products for design automation and product lifecycle management. In my spare time I study front-end development and js. My goal is to master the skills of front-end development and find jobs in this area. I have a structured mind, quickly absorb new information and focus on results. I am efficient in team work and ready to help partners if necessary. In addition to work, I lead an active lifestyle and play football and hockey, and also like to learn new things about technology, science and finance.</p>
+                </section>
+
+                <section class="education">
+                    <h2>Education and courses</h2>
+                    <ul>
+                        <li>Insitute Nuclear Energy and Technical Phythics<br>
+                            NIZHNY NOVGOROD STATE TECHNICAL UNIVERSITY n.a. R.E. Alekseev</li>
+                        <li>Online courses by Webref.ru:
+                            <ul>
+                                <li>HTML Stage 1 and 2</li>
+                                <li>HTML Stage 1 and 2</li>
+                            </ul>
+                        </li>
+                        <li>Online course (HTML,CSS,JS) by htmlacademy.ru</li>
+                        <li>JavaScript Manual on learnjavascript.ru (in progress)</li>
+                        <li>RS Schools Course В«JavaScript/Front-end. Stage 0В» (in progress)</li>
+                    </ul>
+                </section>
+
+                <section class="skill">
+                    <h2>Skill</h2>
+                    <ul>
+                        <li>HTML5</li>
+                        <li>CSS3</li>
+                        <li>JS (base)</li>
+                        <li>Git</li>
+                        <li>Photoshop</li>
+                    </ul>
+                </section>
+
+                <section class="code-example">
+                    <h2>Code example</h2>
+                        <pre><code>function isPrime(num) {
+if(num &lt; 2) return false;
+if(num &lt; 4) return true;
+if(num % 2 == 0 || num % 3 == 0) return false;
+for(let i = 5, N = Math.sqrt(num); i &lt;= N; i += 2)
+if(num % i == 0) return false;
+return true;</code></pre>
+                </section>
+
+                <section class="interest">
+                    <h2>Interest</h2>
+                    <div class="interest-flex">
+                        <img src="icons/bike.png" alt="bike">
+                        <img src="icons/dumbbell.png" alt="dumbbell">
+                        <img src="icons/airplane.png" alt="jorney">
+                        <img src="icons/football-ball.png" alt="football">
+                        <img src="icons/open-book.png" alt="book">
+                        <img src="icons/joystick.png" alt="joystick">
+                    </div>
+                </section>
+            </div>
+        </main>
+        <footer>
+            <p>Copyrights 2022</p>
+            <p><img src="icons/github.png" alt="Github icon"><a href="https://github.com/SolidRules"> SolidRules</a></p>
+            <p><a href="https://rs.school/js/"><img src="https://rs.school/images/rs_school_js.svg" alt="RSS logo"></a></p>
+        </footer>
+    </body>
 </html>
